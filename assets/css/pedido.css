@@ -5,10 +5,13 @@
 }
 
 body {
-	background-image: linear-gradient(to right top, #64004e, #4b084a, #330b43, #1b0b3a, #07012e);
-
 	padding: 0;
 	margin: 0;
+	width: 	100vw;
+	height: 100vh;
+	background: #4d3b3b;
+
+
 }
 
 .container-fluid {
@@ -18,17 +21,18 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width:50%;
 	border-radius: 5px;
-	background-image: linear-gradient(to right top, #f0a2df, #d4b4f9, #b6c5ff, #9ed4ff, #96dfff);
+	background: #fdfaeb;
 	box-shadow: 5px 14px 60% whitesmoke;
+	width: 40vw;
+	min-width: 	400px;
 
 
 }
 
 .formulario {
 
-	min-width: 10vw
+	min-width: 20vw
 }
 .cabe h1 {
 	text-transform: uppercase;
@@ -72,9 +76,27 @@ li .nav-link a:hover {
 
 .botao {
 
-	align-items: center;
+align-items: center;
+background: #f7a29e;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 7px;
+box-shadow: 5px 5px 5% #eee;
+text-shadow: none;
+cursor: pointer;
+
 }
 
+.botao:hover	{
+
+background: #f3c6b9;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 7px;
+box-shadow: 5px 5px 5% #eee;
+text-shadow: none;
+cursor: pointer;
+}
 
 
 input: placeholder {
