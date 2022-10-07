@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,12 +15,11 @@
     </head>
     <body>
 
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-image: url('fundo.jpg');">
             <header class="cabe">
-                <h1>Faça seu orçamento :)</h1>
+                <h1 style=" color:   #f5e0d3;">Faça seu orçamento :)</h1>
             </header>
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f2d9f2; border-radius: 5px;">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background: #f5e0d3; border-radius: 15px;">                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -69,9 +69,9 @@
                     <input type="time" class="form-control" id="horario" required>
                 </div>
 
-                <div id="opt1ons">
+                <div>
                     <p>Tamanho do Bolo:</p>
-                    <select class="form-control">
+                    <select class="form-control" id='opt1ons'>
                         <option>Selecione o tamanho:</option>
                         <option>1 (um) Andar - 15cm - 12 Fatias</option>
                         <option>1 (um) Andar - 20cm - 25 Fatias</option>
@@ -86,7 +86,8 @@
                         <option>3 (três) Andares - 30cm + 25cm + 20cm - 180 Fatias</option>
                         <option>4 (quatro) Andares - 30cm + 25cm + 20cm + 15cm - 200 Fatias</option>
                     </select>
-                    <br>
+                  
+                    <p style="font-size: 10px; color: #f5e0d3;">*Bolos do tipo Chantininho e Torta são feitos apenas em 1 (um) andar.</p>
                 </div>
 
                 <fieldset class="form-chek">
@@ -96,6 +97,10 @@
                             <input type="checkbox" name="Chantinho" id="chantinho" class="checkboxes" value="Chantinho">
                             <label for="chantinho">Chantininho</label>
                         </div>
+                         <div class="p-2 bd-highlight">
+                            <input type="checkbox" name="torta" id="torta" class="checkboxes" value="torta">
+                            <label for="torta">Torta</label>
+                        </div>
                         <div class="p-2 bd-highlight">
                             <input type="checkbox" name="pastaAmericana" id="pastaAmericana" class="checkboxes" value="Pasta Americana">
                             <label for="pastaAmericana">Pasta Americana</label>
@@ -104,10 +109,7 @@
                             <input type="checkbox" name="pastaBoloDeCasamento" id="pastaBoloDeCasamento" class="checkboxes" value="Pasta Bolo de Casamento">
                             <label for="pastaBoloDeCasamento">Bolo de Casamento</label>
                         </div>
-                        <div class="p-2 bd-highlight">
-                            <input type="checkbox" name="torta" id="torta" class="checkboxes" value="torta">
-                            <label for="torta">Torta</label>
-                        </div>
+                       
                     </div>
                 </fieldset>
                 <div class="form-group">
@@ -115,11 +117,11 @@
                     <textarea class="form-control" id="mensagem" rows="3"></textarea>
                 </div>
                 <br>
-                <div class="botao">
-                    <button type="submit" class=" btn btn-primary">
-                        <i class="fa-solid fa-paper-plane">Enviar </i>
+           
+                    <button type="submit" class=" botao">
+                        <i class="fa-solid fa-paper-plane"> Enviar </i>
                     </button>
-                </div>
+              
             </form>
         </div>
 
